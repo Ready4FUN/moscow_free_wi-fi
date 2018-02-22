@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Barbershop</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+	<script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">	
+</head>
+<body>
+
+<div id = "mapContainer"></div> 
+
+<script type="text/javascript">
+	var platform = new H.service.Platform({
+		'app_id': 'xxkQMf84Rb3cKA0fF8Du',
+		'app_code': '3oHkXZJOAtM3jtOvDuGd0g' 
+	});
+
+	var defaultLayers = platform.createDefaultLayers();
+
+	var map = new H.Map(
+		document.getElementById('mapContainer'),
+		defaultLayers.normal.map,
+		{
+			zoom: 10,
+			center: { lat: 55.755814, lng: 37.617635}
+		}
+	);
+</script>
+</body>
+</html>
