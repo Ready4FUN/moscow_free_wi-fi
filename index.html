@@ -8,6 +8,8 @@
 
 	<script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
 	<script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js" 
+     type="text/javascript" charset="utf-8"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
 </head>
@@ -31,6 +33,9 @@
 			center: { lat: 55.755814, lng: 37.617635}
 		}
 	);
+
+	var mapEvents = new H.mapevents.MapEvents(map);
+	var behavior = new H.mapevents.Behavior(mapEvents);
 </script>
 </body>
 </html>
